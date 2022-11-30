@@ -41,3 +41,7 @@ Subway Surfers - zręcznościowa gra akcji, uciekanie https://apps.apple.com/pl/
 
 Tsuki Oddysey - symulacja przygodowa, urocza grafika i spokojny gameplay, raczej trudne do zrobienia https://apps.apple.com/pl/app/tsukis-odyssey/id1564146071?l=pl
 *Gameplay: https://youtu.be/7-SsrKYCK94*
+
+
+
+Najbardziej jestem zainteresowana, aby zrobic gre podobna do Super Tower Block
