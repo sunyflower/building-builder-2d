@@ -53,7 +53,7 @@ Potrzebny jest spokoj oraz opanowanie, aby piac budynek ku gorze.
 
 
 # Bibliografia
-Potrzebne linki - tutoriale oraz pogladlowy gameplay :)
+Potrzebne linki - tutoriale oraz pogladowy gameplay :)
 
 - https://youtu.be/4QP0ZTPUaI4
 
