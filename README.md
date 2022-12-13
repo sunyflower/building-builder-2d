@@ -51,6 +51,8 @@ Musisz ulozyc jak najwiecej pieter budynku ukladajac jedno mieszkanie nad drugim
 Wczesniejsze lub zbyt pozne klikniecie moze doprowadzic do konca gry.
 Potrzebny jest spokoj oraz opanowanie, aby piac budynek ku gorze.
 
+# STORYBOARD
+> w fazie tworzenia 
 
 # Bibliografia
 Potrzebne linki - tutoriale oraz pogladowy gameplay :)
