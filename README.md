@@ -48,8 +48,9 @@ Najbardziej jestem zainteresowana, aby zrobic gre podobna do Super Tower Block
 
 # PITCH
 Musisz ulozyc jak najwiecej pieter budynku ukladajac jedno mieszkanie nad drugim.  
-Wczesniejsze lub zbyt pozne klikniecie moze doprowadzic do konca gry.
-Potrzebny jest spokoj oraz opanowanie, aby piac budynek ku gorze.
+Zostan zaradnym budowniczym, ktory wybuduje najwyzszy budynek w miescie, a moze i na swiecie?
+Potrzebny jest spokoj oraz opanowanie, aby piac budynek ku gorze a chwila nieuwagi moze doprowadzic do konca rozgrywki. 
+
 
 # STORYBOARD
 > sketch of the game in action
