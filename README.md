@@ -52,7 +52,9 @@ Wczesniejsze lub zbyt pozne klikniecie moze doprowadzic do konca gry.
 Potrzebny jest spokoj oraz opanowanie, aby piac budynek ku gorze.
 
 # STORYBOARD
-> w fazie tworzenia 
+> sketch of the game in action
+> https://drive.google.com/drive/folders/1gso3YqNZLpgDHAA1uKjZS3SSuR651JzA
+
 
 # Bibliografia
 Potrzebne linki - tutoriale oraz pogladowy gameplay :)
