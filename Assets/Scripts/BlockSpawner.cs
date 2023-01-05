@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockSpawner : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class BlockSpawner : MonoBehaviour {
+   
+  public GameObject block_Prefab;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  void Start() {
+    SpawnBlock();
+  }
+
+  public void SpawnBlock () {
+     GameObject block_Obj = Instantiate(block_Prefab);
+
+     Vector3 temp = transform.position;
+     temp.z = 0f;
+     
+     block_Obj.transform.position = temp;
+
+  }
+
 }
