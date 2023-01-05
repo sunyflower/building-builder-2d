@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class BlockScript : MonoBehaviour {
 
-   private float min_X = -1.5f, max_X = 1.5f;
+   private float min_X = -1.6f, max_X = 1.6f;
 
    private bool canMove;
    private float move_Speed = 2f;
@@ -18,7 +20,10 @@ public class BlockScript : MonoBehaviour {
 
    void Awake() {
         myBody = GetComponent<Rigidbody2D>();
+        myBody.gravityScale = 0f;
    }
+
+
 
     // Start is called before the first frame update
     void Start() {
@@ -28,6 +33,8 @@ public class BlockScript : MonoBehaviour {
             move_Speed *= -1f;
         }
     }
+
+
 
     // Update is called once per frame
     void Update() {
