@@ -31,13 +31,21 @@ public class GameplayController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       DetectInput();     
+     DetectInput();     
     }
 
     void DetectInput() {
       if (Input.GetMouseButtonDown(0)) {
         currentBlock.DropBlock();
       }
+    }
+
+    public void SpawnNewBlock() {
+      Invoke("NewBlock", 2f);
+    }
+
+    void NewBlock() {
+      block_Spawner.SpawnBlock();
     }
 
 }

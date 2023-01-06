@@ -66,5 +66,20 @@ public class BlockScript : MonoBehaviour {
         canMove = false;
         myBody.gravityScale = Random.Range(2, 4);
      }
+  
+  void Landed() {
+
+    if (gameOver)
+      return;
+
+
+      ignoreCollision = true;
+      ignoreTrigger = true;
+
+      GameplayController.instance.SpawnNewBlock();
+      GameplayController.instance.MoveCamera();
+
+
+  }
 
 }
