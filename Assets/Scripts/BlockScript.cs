@@ -79,7 +79,18 @@ public class BlockScript : MonoBehaviour {
       GameplayController.instance.SpawnNewBlock();
       GameplayController.instance.MoveCamera();
 
+  }
+
+  void RestartGame() {
+    GameplayController.instance.RestartGame();
+  }
+
+  void OnCollisionEnter2D(Collision2D target) {
 
   }
 
+  void OnTriggerEnter2D(Collider2D target) {
+
+  }
+ 
 }

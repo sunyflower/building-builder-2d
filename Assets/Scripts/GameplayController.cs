@@ -48,4 +48,20 @@ public class GameplayController : MonoBehaviour
       block_Spawner.SpawnBlock();
     }
 
+    public void MoveCamera() {
+
+      moveCount++;
+
+      if(moveCount == 3) {
+        moveCount = 0;
+        //cameraScript.targetPos.y += 2f;
+      }
+      
+    }
+
+    public void RestartGame() {
+      UnityEngine.SceneManagment.SceneManager.LoadScene(
+        UnityEngine.SceneManagment.SceneManager.GetActiveScene().name);
+    }
+
 }
