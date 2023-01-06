@@ -32,6 +32,8 @@ public class BlockScript : MonoBehaviour {
         if(Random.Range(0, 2) > 0) {
             move_Speed *= -1f;
         }
+
+        GameplayController.instance.currentBlock = this;
     }
 
 
@@ -59,4 +61,10 @@ public class BlockScript : MonoBehaviour {
             transform.position = temp;
         }  
     }
+
+      public void DropBlock() {
+        canMove = false;
+        myBody.gravityScale = Random.Range(2, 4);
+     }
+
 }
