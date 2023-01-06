@@ -72,25 +72,45 @@ public class BlockScript : MonoBehaviour {
     if (gameOver)
       return;
 
-
       ignoreCollision = true;
       ignoreTrigger = true;
 
       GameplayController.instance.SpawnNewBlock();
       GameplayController.instance.MoveCamera();
 
+    }
+
+    void RestartGame() {
+      GameplayController.instance.RestartGame();
   }
 
-  void RestartGame() {
-    GameplayController.instance.RestartGame();
+    void OnCollisionEnter2D(Collision2D target) {
+
+     if (ignoreCollision)
+     return;
+
+     if(target.gameObject.tag == "platform") {
+        Invoke("Landed", 2f);
+        ignoreCollision = true;
+     }
+
+     if(target.gameObject.tag == "block") {
+        Invoke("Landed", 2f);
+        ignoreCollision = true;
+     }
+    }
+    void OnTriggerEnter2D(Collider2D target) {
+
+    if(ignoreTrigger)
+       return;
+
+       if(target.tag == "GameOver") {
+         CancelInvoke("Landed");
+         gameOver = true;
+         ignoreTrigger = true;
+
+         Invoke("RestartGame", 2f);
+       }
   }
-
-  void OnCollisionEnter2D(Collision2D target) {
-
-  }
-
-  void OnTriggerEnter2D(Collider2D target) {
-
-  }
- 
 }
+

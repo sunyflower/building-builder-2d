@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameplayController : MonoBehaviour
 {
@@ -60,8 +61,8 @@ public class GameplayController : MonoBehaviour
     }
 
     public void RestartGame() {
-      UnityEngine.SceneManagment.SceneManager.LoadScene(
-        UnityEngine.SceneManagment.SceneManager.GetActiveScene().name);
+      SceneManager.LoadScene(
+      SceneManager.GetActiveScene().name);
     }
 
 }
