@@ -47,7 +47,7 @@ public class GameplayController : MonoBehaviour
 
     public void SpawnNewBlock()
     {
-      Invoke("NewBlock", 2f);
+      Invoke("NewBlock", 1f);
     }
 
 
