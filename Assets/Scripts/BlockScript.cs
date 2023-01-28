@@ -42,7 +42,7 @@ public class BlockScript : MonoBehaviour {
     void Update() {
         MoveBlock();
     }
-    
+
     void MoveBlock()
     {
         if(canMove)
@@ -68,7 +68,22 @@ public class BlockScript : MonoBehaviour {
         canMove = false;
         myBody.gravityScale = Random.Range(2, 4);
      }
-  
+
+
+    //dodanie punktu o 1
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("platform"))
+        {
+            Score.scoreValue += 1;
+        }
+
+        if (collision.collider.CompareTag("block"))
+        {
+            Score.scoreValue += 1;
+        }
+    }
+
 
     void Landed() {
 
@@ -97,15 +112,19 @@ public class BlockScript : MonoBehaviour {
      return;
 
      if(target.gameObject.tag == "platform") {
+
         Invoke("Landed", 2f);
         ignoreCollision = true;
      }
 
      if(target.gameObject.tag == "block") {
+
         Invoke("Landed", 2f);
         ignoreCollision = true;
      }
     }
+
+
     void OnTriggerEnter2D(Collider2D target) {
 
     if(ignoreTrigger)
