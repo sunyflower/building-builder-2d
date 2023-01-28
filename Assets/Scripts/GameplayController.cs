@@ -15,12 +15,12 @@ public class GameplayController : MonoBehaviour
       public CameraFollow cameraScript;
       private int moveCount;
 
-      void Awake() {
+      void Awake()
+      {
         if(instance == null)
            instance = this;
 
       }
-
 
 
     // Start is called before the first frame update
@@ -29,39 +29,51 @@ public class GameplayController : MonoBehaviour
        block_Spawner.SpawnBlock(); 
     }
 
+
     // Update is called once per frame
     void Update()
     {
      DetectInput();     
     }
 
+
     void DetectInput() {
-      if (Input.GetMouseButtonDown(0)) {
+      if (Input.GetMouseButtonDown(0))
+      {
         currentBlock.DropBlock();
       }
     }
 
-    public void SpawnNewBlock() {
+
+    public void SpawnNewBlock()
+    {
       Invoke("NewBlock", 2f);
     }
 
-    void NewBlock() {
+
+    void NewBlock()
+    {
       block_Spawner.SpawnBlock();
     }
 
+
+    //śledząca kamera 
     public void MoveCamera() {
 
       moveCount++;
 
-      if(moveCount == 3) {
+      if(moveCount == 3)
+        {
          moveCount = 0;
 
          cameraScript.targetPos.y += 2f;
-      }
+        }
       
     }
 
-    public void RestartGame() {
+    //Restart gry
+    public void RestartGame()
+    {
       SceneManager.LoadScene(
       SceneManager.GetActiveScene().name);
     }

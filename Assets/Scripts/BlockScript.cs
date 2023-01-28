@@ -43,8 +43,10 @@ public class BlockScript : MonoBehaviour {
         MoveBlock();
     }
     
-    void MoveBlock() {
-        if(canMove) {
+    void MoveBlock()
+    {
+        if(canMove)
+        {
 
             Vector3 temp = transform.position;
 
@@ -52,7 +54,6 @@ public class BlockScript : MonoBehaviour {
 
             if(temp.x > max_X) {
                 move_Speed *= -1f;
-
 
             } else if (temp.x < min_X) {
                 move_Speed *= -1f;
@@ -62,12 +63,14 @@ public class BlockScript : MonoBehaviour {
         }  
     }
 
-      public void DropBlock() {
+
+    public void DropBlock() {
         canMove = false;
         myBody.gravityScale = Random.Range(2, 4);
      }
   
-  void Landed() {
+
+    void Landed() {
 
     if (gameOver)
       return;
@@ -80,11 +83,15 @@ public class BlockScript : MonoBehaviour {
 
     }
 
-    void RestartGame() {
-      GameplayController.instance.RestartGame();
-  }
 
-    void OnCollisionEnter2D(Collision2D target) {
+    void RestartGame()
+    {
+      GameplayController.instance.RestartGame();
+    }
+
+
+    void OnCollisionEnter2D(Collision2D target)
+    {
 
      if (ignoreCollision)
      return;
