@@ -62,10 +62,8 @@ Potrzebne linki - tutoriale oraz pogladowy gameplay :)
 
 - https://youtu.be/4QP0ZTPUaI4
 
-- https://youtu.be/RYJsdpSeuV4
+- https://youtu.be/zc8ac_qUXQY
 
 - https://youtu.be/-6LRXBtbNHg
 
-- https://youtu.be/I19cC_HcyC0
-
-- https://m.youtube.com/watch?v=-TZDC338YVE
+- https://youtu.be/I19cC_HcyC0 
