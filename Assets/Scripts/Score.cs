@@ -5,22 +5,25 @@ using UnityEngine.UI;
 using TMPro;
 
 public class Score : MonoBehaviour
-
 {
-    public static int scoreValue = 0;
+    public static Score Instance;
+    public int scoreValue = 0;
     TMP_Text score;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        score = GetComponent<TMP_Text> ();
-        
+        score = GetComponent<TMP_Text>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddScore()
     {
+        scoreValue++;
         score.text = "" + scoreValue;
-        
     }
 }
