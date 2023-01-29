@@ -36,7 +36,7 @@ public class GameplayController : MonoBehaviour
      DetectInput();     
     }
 
-    //przycisk
+    //przycisk dropu blocka
     void DetectInput() {
         if(Input.GetKeyDown(KeyCode.Space))
       {
@@ -45,13 +45,13 @@ public class GameplayController : MonoBehaviour
     }
 
 
-    //spawnowanie blocka
+    //spawnowanie blocka po 1 sek
     public void SpawnNewBlock()
     {
       Invoke("NewBlock", 1f);
     }
 
-  
+    //nowy block
     void NewBlock()
     {
       block_Spawner.SpawnBlock();
