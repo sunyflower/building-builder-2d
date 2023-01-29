@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BlockSpawner : MonoBehaviour {
-   
-  public GameObject block_Prefab;
 
+  //spawnowanie blocka
+
+  public GameObject block_Prefab;
 
   public void SpawnBlock () {
      GameObject block_Obj = Instantiate(block_Prefab);

@@ -21,6 +21,7 @@ public class Score : MonoBehaviour
         score = GetComponent<TMP_Text>();
     }
 
+    //dodawanie punktu
     public void AddScore()
     {
         scoreValue++;

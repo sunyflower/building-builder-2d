@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BlockScript : MonoBehaviour
 {
-
+    //strefa poruszania klocka na boki i szybkosc
     private float max_X = 1.6f;
 
     private bool canMove;
@@ -38,6 +38,8 @@ public class BlockScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
+     //poruszanie klocka
     {
         MoveBlock();
     }
@@ -55,7 +57,7 @@ public class BlockScript : MonoBehaviour
         }
     }
 
-
+    //upuszczenie klocka
     public void DropBlock()
     {
         canMove = false;
@@ -75,13 +77,13 @@ public class BlockScript : MonoBehaviour
         GameplayController.instance.MoveCamera();
     }
 
-
+    //restart gry
     void RestartGame()
     {
         GameplayController.instance.RestartGame();
     }
 
-
+    //sprawdzenie czy jest kolizja z platforma lub blockiem
     void OnCollisionEnter2D(Collision2D target)
     {
         if (ignoreCollision)
@@ -100,7 +102,7 @@ public class BlockScript : MonoBehaviour
         }
     }
 
-
+    //game over i restart gry
     void OnTriggerEnter2D(Collider2D target)
     {
         if (target.tag == "GameOver")

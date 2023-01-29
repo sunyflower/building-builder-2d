@@ -36,21 +36,22 @@ public class GameplayController : MonoBehaviour
      DetectInput();     
     }
 
-
+    //przycisk
     void DetectInput() {
-      if (Input.GetMouseButtonDown(0))
+        if(Input.GetKeyDown(KeyCode.Space))
       {
         currentBlock.DropBlock();
       }
     }
 
 
+    //spawnowanie blocka
     public void SpawnNewBlock()
     {
       Invoke("NewBlock", 1f);
     }
 
-
+  
     void NewBlock()
     {
       block_Spawner.SpawnBlock();
@@ -71,7 +72,7 @@ public class GameplayController : MonoBehaviour
       
     }
 
-    //Restart gry
+    //Restart gry, zaladowanie sceny
     public void RestartGame()
     {
       SceneManager.LoadScene(

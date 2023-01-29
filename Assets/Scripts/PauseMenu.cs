@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
-
+    //quit gry do menu
     public void QuitGame ()
     {
         Time.timeScale = 1f;

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
-{
 
+    //sledzenie kamery i move kamery
+{
     [HideInInspector]
     public Vector3 targetPos;
 
