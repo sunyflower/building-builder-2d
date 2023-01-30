@@ -44,3 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: logo
+    uniqueID: 18702753
+    locked: 0
+  - name: mainmenu
+    uniqueID: 1529263013
+    locked: 0
+  - name: background
+    uniqueID: 939686489
+    locked: 0
