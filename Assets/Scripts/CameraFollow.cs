@@ -11,12 +11,13 @@ public class CameraFollow : MonoBehaviour
 
     private float smoothMove = 2f;
 
+    //
     void Start()
     {
         targetPos = transform.position;
     }
 
-
+    //
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, targetPos, smoothMove * Time.deltaTime); 

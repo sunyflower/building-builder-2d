@@ -23,14 +23,14 @@ public class GameplayController : MonoBehaviour
       }
 
 
-    // Start is called before the first frame update
+    //spawn blocka
     void Start()
     {
        block_Spawner.SpawnBlock(); 
     }
 
 
-    // Update is called once per frame
+    //
     void Update()
     {
      DetectInput();     
@@ -51,7 +51,7 @@ public class GameplayController : MonoBehaviour
       Invoke("NewBlock", 1f);
     }
 
-    //nowy block
+    //nowy block ?
     void NewBlock()
     {
       block_Spawner.SpawnBlock();

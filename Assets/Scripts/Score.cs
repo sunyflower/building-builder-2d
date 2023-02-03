@@ -15,7 +15,7 @@ public class Score : MonoBehaviour
         Instance = this;
     }
 
-    // Start is called before the first frame update
+    // 
     void Start()
     {
         score = GetComponent<TMP_Text>();

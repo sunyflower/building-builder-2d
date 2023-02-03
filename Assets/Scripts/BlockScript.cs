@@ -26,7 +26,7 @@ public class BlockScript : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    // 
     void Start()
     {
         canMove = true;
@@ -35,8 +35,6 @@ public class BlockScript : MonoBehaviour
     }
 
 
-
-    // Update is called once per frame
     void Update()
 
      //poruszanie klocka
@@ -64,7 +62,7 @@ public class BlockScript : MonoBehaviour
         myBody.gravityScale = Random.Range(2, 4);
     }
 
-
+    //
     void Landed()
     {
         if (gameOver)
