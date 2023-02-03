@@ -53,7 +53,7 @@ Potrzebny jest spokoj oraz opanowanie, aby piac budynek ku gorze a chwila nieuwa
 
 
 # STORYBOARD
-> sketch of the game in action
+> sketch of the game in action + filmiki z gry
 > https://drive.google.com/drive/folders/1gso3YqNZLpgDHAA1uKjZS3SSuR651JzA
 
 
