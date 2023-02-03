@@ -7,7 +7,8 @@ public class BlockSpawner : MonoBehaviour {
   //spawnowanie blocka
   public GameObject block_Prefab;
 
-    //bierze prefaba i tworzy na scenie tam gdzie blcok spawner na scenie
+
+  //bierze prefaba i tworzy na scenie tam gdzie blcok spawner na scenie
   public void SpawnBlock () {
      GameObject block_Obj = Instantiate(block_Prefab);
 

@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
 
     }
 
+
     //wyjście z gry
     public void QuitGame ()
     {

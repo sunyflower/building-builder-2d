@@ -48,6 +48,8 @@ public class GameplayController : MonoBehaviour
       Invoke("NewBlock", 1f);
     }
 
+
+
     //spawn new block 
     void NewBlock()
     {
@@ -67,6 +69,8 @@ public class GameplayController : MonoBehaviour
          cameraScript.targetPos.y += 2f;
         }
     }
+
+
 
     //Restart gry, zaladowanie sceny
     public void RestartGame()

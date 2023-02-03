@@ -9,7 +9,6 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
 
 
-    // 
     void Update()
     {    //Escape jako przycisk menu pauzy 
         if (Input.GetKeyDown(KeyCode.Escape))
