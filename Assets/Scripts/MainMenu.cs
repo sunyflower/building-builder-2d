@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    //graj (aktywowanie następnej sceny)
+    //graj (ładowanie następnej sceny)
     public void PlayGame ()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);

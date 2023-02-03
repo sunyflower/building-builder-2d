@@ -4,22 +4,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameplayController : MonoBehaviour
-{
+{     //zeby wywolac
       public static GameplayController instance;
 
       public BlockSpawner block_Spawner;
-     
+
+     //schowanie publiczenj zmiennej
      [HideInInspector]
       public BlockScript currentBlock;
 
       public CameraFollow cameraScript;
       private int moveCount;
 
+      //podczas tworzenia obiektu
       void Awake()
       {
         if(instance == null)
            instance = this;
-
       }
 
 
@@ -30,20 +31,16 @@ public class GameplayController : MonoBehaviour
     }
 
 
-    //
+    //sprawdzanie czy space jest klikniete
     void Update()
     {
-     DetectInput();     
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            currentBlock.DropBlock();
+        }
     }
 
-    //przycisk dropu blocka
-    void DetectInput() {
-        if(Input.GetKeyDown(KeyCode.Space))
-      {
-        currentBlock.DropBlock();
-      }
-    }
-
+  
 
     //spawnowanie blocka po 1 sek
     public void SpawnNewBlock()
@@ -51,7 +48,7 @@ public class GameplayController : MonoBehaviour
       Invoke("NewBlock", 1f);
     }
 
-    //nowy block ?
+    //spawn new block 
     void NewBlock()
     {
       block_Spawner.SpawnBlock();
@@ -69,7 +66,6 @@ public class GameplayController : MonoBehaviour
 
          cameraScript.targetPos.y += 2f;
         }
-      
     }
 
     //Restart gry, zaladowanie sceny

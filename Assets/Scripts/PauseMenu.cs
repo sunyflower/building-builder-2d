@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
+
     // 
     void Update()
     {    //Escape jako przycisk menu pauzy 
@@ -34,7 +35,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
- 
+
+
     //pauza
     public void Pause ()
     {
@@ -42,6 +44,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
 
     //quit gry do menu
     public void QuitGame ()

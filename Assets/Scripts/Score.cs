@@ -15,16 +15,18 @@ public class Score : MonoBehaviour
         Instance = this;
     }
 
-    // 
+
+    //przypisanie komponentu tekstu do zmiennej score
     void Start()
     {
         score = GetComponent<TMP_Text>();
     }
 
-    //dodawanie punktu
+
+    //dodawanie punktu, bierze inta i transformuje w text
     public void AddScore()
     {
         scoreValue++;
-        score.text = "" + scoreValue;
+        score.text = scoreValue.ToString();
     }
 }
