@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BlockScript : MonoBehaviour
 {
-    //strefa poruszania klocka na boki
+    //poruszanie klocka na boki
     private float max_X = 1.6f;
 
     private bool canMove;
@@ -69,7 +69,7 @@ public class BlockScript : MonoBehaviour
     }
 
 
-    //
+    // sprawdzanie czy wyladowal
     void Landed()
     {
         //sprawdzanie czy gra sie skonczyla

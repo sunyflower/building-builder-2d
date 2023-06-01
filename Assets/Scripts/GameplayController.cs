@@ -16,12 +16,15 @@ public class GameplayController : MonoBehaviour
       public CameraFollow cameraScript;
       private int moveCount;
 
-      //podczas tworzenia obiektu
-      void Awake()
-      {
-        if(instance == null)
-           instance = this;
-      }
+
+
+     //podczas tworzenia obiektu
+    void Awake()
+     {
+       if(instance == null)
+          instance = this;
+     }
+
 
 
     //spawn blocka
@@ -29,6 +32,7 @@ public class GameplayController : MonoBehaviour
     {
        block_Spawner.SpawnBlock(); 
     }
+
 
 
     //sprawdzanie czy space jest klikniete
@@ -55,6 +59,7 @@ public class GameplayController : MonoBehaviour
     {
       block_Spawner.SpawnBlock();
     }
+
 
 
     //śledząca kamera 
